@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PIVÔ — Seu estilo te move</title>
+  <meta name="description" content="PIVÔ — calçados femininos no Monumental Shopping. Seu estilo te move.">
+  <meta name="theme-color" content="#F0E6D3">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script type="importmap">
+    { "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js",
+      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/"
+    } }
+  </script>
+</head>
+<body>
+  <!-- Loader -->
+  <div class="loader" aria-hidden="true">
+    <div class="loader__mark"><span>P</span><span>I</span><span>V</span><span>Ô</span></div>
+    <div class="loader__bar"><i></i></div>
+  </div>
+
+  <div class="cursor" aria-hidden="true"><span class="cursor__label">ver</span></div>
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="nav">
+    <a href="#top" class="nav__logo" aria-label="PIVÔ — início">PIVÔ</a>
+    <nav class="nav__links" aria-label="Seções">
+      <a href="#manifesto">Manifesto</a>
+      <a href="#colecao">Coleção</a>
+      <a href="#caixa">A caixa</a>
+      <a href="#loja">A loja</a>
+    </nav>
+    <a class="btn btn--small" href="https://wa.me/5598988594662?text=Ol%C3%A1%2C%20Piv%C3%B4!%20Vim%20pelo%20site." target="_blank" rel="noopener">
+      <span>Falar no WhatsApp</span>
+    </a>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero" aria-label="Apresentação">
+      <div class="hero__word" aria-hidden="true">
+        <span>P</span><span>I</span><span>V</span><span>Ô</span>
+      </div>
+      <canvas class="hero__canvas" id="hero-canvas" aria-label="Sandália PIVÔ em 3D girando sobre pedestal"></canvas>
+      <div class="hero__meta hero__meta--left">
+        <p class="eyebrow">Calçados femininos</p>
+        <h1 class="hero__title"><em>Seu estilo</em><br>te move.</h1>
+      </div>
+      <div class="hero__meta hero__meta--right">
+        <p>Monumental Shopping<br>Seg a sáb · 9h às 19h30</p>
+        <a class="link-arrow" href="#colecao">Ver coleção <span aria-hidden="true">↓</span></a>
+      </div>
+      <p class="hero__hint" aria-hidden="true">arraste para girar</p>
+    </section>
+
+    <!-- MARQUEE -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>Seu estilo te move</span><i>✦</i><span>Monumental Shopping</span><i>✦</i><span>Saltos · Mules · Plataformas · Rasteiras</span><i>✦</i>
+        <span>Seu estilo te move</span><i>✦</i><span>Monumental Shopping</span><i>✦</i><span>Saltos · Mules · Plataformas · Rasteiras</span><i>✦</i>
+      </div>
+    </div>
+
+    <!-- MANIFESTO -->
+    <section class="manifesto" id="manifesto">
+      <p class="eyebrow">01 — Manifesto</p>
+      <p class="manifesto__text" data-split>
+        Pivô é o ponto de giro. É aquele passo que muda a direção do dia, o salto que muda a postura, o detalhe que muda o look inteiro. A gente escolhe cada par pensando em quem vai calçar e em para onde ela vai.
+      </p>
+      <div class="manifesto__foot">
+        <figure class="manifesto__img" data-cursor="ver">
+          <img src="img/salto-amarracao.jpg" alt="Sandália de salto fino preta com amarração no tornozelo" loading="lazy">
+        </figure>
+        <p class="manifesto__note"><em>Do primeiro passo ao último compromisso,</em> um calçado que acompanha o seu ritmo.</p>
+      </div>
+    </section>
+
+    <!-- COLEÇÃO (horizontal) -->
+    <section class="colecao" id="colecao">
+      <div class="colecao__pin">
+        <header class="colecao__head">
+          <p class="eyebrow">02 — Coleção</p>
+          <h2 class="h2">Escolha o seu <em>giro</em></h2>
+        </header>
+        <div class="colecao__track">
+          <article class="card" data-cursor="ver">
+            <div class="card__img"><img src="img/slingback.jpg" alt="Scarpin slingback marrom tartaruga sobre mesa redonda" loading="lazy"></div>
+            <div class="card__info"><span class="card__n">01</span><h3>Slingbacks</h3><p>Bico fino, salto alto, tira no calcanhar.</p></div>
+          </article>
+          <article class="card" data-cursor="ver">
+            <div class="card__img"><img src="img/plataforma.jpg" alt="Sandália plataforma preta de dedo" loading="lazy"></div>
+            <div class="card__info"><span class="card__n">02</span><h3>Plataformas</h3><p>Altura com conforto pro dia inteiro.</p></div>
+          </article>
+          <article class="card" data-cursor="ver">
+            <div class="card__img"><img src="img/armadilha.jpg" alt="Mule anabela vinho debaixo de uma caixa de papelão" loading="lazy"></div>
+            <div class="card__info"><span class="card__n">03</span><h3>Mules</h3><p>Calça em um segundo, chama atenção o dia todo.</p></div>
+          </article>
+          <article class="card" data-cursor="ver">
+            <div class="card__img"><img src="img/rasteiras.jpg" alt="Rasteiras em creme, vinho e preto" loading="lazy"></div>
+            <div class="card__info"><span class="card__n">04</span><h3>Rasteiras</h3><p>Leves, versáteis, com acabamento de loja.</p></div>
+          </article>
+          <article class="card" data-cursor="ver">
+            <div class="card__img"><img src="img/salto-amarracao.jpg" alt="Sandália de salto fino preta" loading="lazy"></div>
+            <div class="card__info"><span class="card__n">05</span><h3>Saltos finos</h3><p>Para a noite que pede presença.</p></div>
+          </article>
+          <div class="card card--end">
+            <p>Viu algo que gostou?</p>
+            <a class="btn" href="https://wa.me/5598988594662?text=Ol%C3%A1%2C%20Piv%C3%B4!%20Quero%20saber%20mais%20sobre%20a%20cole%C3%A7%C3%A3o." target="_blank" rel="noopener"><span>Consultar modelos</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CAIXA 3D -->
+    <section class="caixa" id="caixa">
+      <div class="caixa__sticky">
+        <canvas class="caixa__canvas" id="box-canvas" aria-label="Caixa PIVÔ em 3D se abrindo e revelando um sapato"></canvas>
+        <div class="caixa__copy caixa__copy--a">
+          <p class="eyebrow">03 — A caixa</p>
+          <h2 class="h2">O tipo de armadilha<br><em>que você cairia.</em></h2>
+        </div>
+        <div class="caixa__copy caixa__copy--b">
+          <h2 class="h2">Abrir uma caixa Pivô<br><em>é o começo do giro.</em></h2>
+          <p>Cada par sai da loja embalado como presente — mesmo quando o presente é pra você.</p>
+        </div>
+        <div class="caixa__progress" aria-hidden="true"><i></i></div>
+      </div>
+    </section>
+
+    <!-- LOJA -->
+    <section class="loja" id="loja">
+      <div class="loja__media" data-cursor="ver">
+        <img src="img/loja-poltrona.jpg" alt="Interior da loja Pivô com parede vermelha e puff branco" loading="lazy">
+      </div>
+      <div class="loja__info">
+        <p class="eyebrow eyebrow--light">04 — A loja</p>
+        <h2 class="h2">Vem sentir<br><em>o giro de perto.</em></h2>
+        <dl class="loja__dl">
+          <div><dt>Onde</dt><dd>Monumental Shopping</dd></div>
+          <div><dt>Quando</dt><dd>Segunda a sábado<br>9h às 19h30</dd></div>
+          <div><dt>Fale com a gente</dt><dd><a href="https://wa.me/5598988594662" target="_blank" rel="noopener">(98) 98859-4662</a></dd></div>
+        </dl>
+        <a class="btn btn--light" href="https://wa.me/5598988594662?text=Ol%C3%A1%2C%20Piv%C3%B4!%20Quero%20visitar%20a%20loja." target="_blank" rel="noopener"><span>Agendar visita</span></a>
+      </div>
+      <figure class="loja__float" aria-hidden="true">
+        <img src="img/sacola.jpg" alt="" loading="lazy">
+      </figure>
+    </section>
+
+    <!-- INSTAGRAM -->
+    <section class="insta">
+      <header class="insta__head">
+        <p class="eyebrow">05 — No feed</p>
+        <h2 class="h2"><a href="https://instagram.com/pivooficial" target="_blank" rel="noopener">@pivooficial</a></h2>
+      </header>
+      <div class="insta__grid">
+        <a class="tile" href="https://instagram.com/pivooficial" target="_blank" rel="noopener" data-cursor="abrir"><img src="img/armadilha.jpg" alt="Mule vinho em armadilha de caixa" loading="lazy"></a>
+        <a class="tile" href="https://instagram.com/pivooficial" target="_blank" rel="noopener" data-cursor="abrir"><img src="img/inauguracao.jpg" alt="Arte de inauguração da Pivô" loading="lazy"></a>
+        <a class="tile" href="https://instagram.com/pivooficial" target="_blank" rel="noopener" data-cursor="abrir"><img src="img/plataforma.jpg" alt="Sandália plataforma preta" loading="lazy"></a>
+        <a class="tile" href="https://instagram.com/pivooficial" target="_blank" rel="noopener" data-cursor="abrir"><img src="img/sacola.jpg" alt="Sacola da Pivô na loja" loading="lazy"></a>
+        <a class="tile" href="https://instagram.com/pivooficial" target="_blank" rel="noopener" data-cursor="abrir"><img src="img/slingback.jpg" alt="Slingback tartaruga" loading="lazy"></a>
+        <a class="tile" href="https://instagram.com/pivooficial" target="_blank" rel="noopener" data-cursor="abrir"><img src="img/rasteiras.jpg" alt="Rasteiras coloridas" loading="lazy"></a>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+      <p class="eyebrow">Pronta pro próximo passo?</p>
+      <a class="cta__big" href="https://wa.me/5598988594662?text=Ol%C3%A1%2C%20Piv%C3%B4!" target="_blank" rel="noopener" data-magnetic>
+        <span class="cta__line"><span>Seu estilo</span></span>
+        <span class="cta__line"><em>te move.</em></span>
+      </a>
+      <p class="cta__sub">Chama no WhatsApp ↗</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__mark" aria-hidden="true">PIVÔ</div>
+    <div class="footer__row">
+      <p>Monumental Shopping · Seg a sáb, 9h–19h30</p>
+      <p><a href="https://instagram.com/pivooficial" target="_blank" rel="noopener">Instagram</a> · <a href="https://wa.me/5598988594662" target="_blank" rel="noopener">WhatsApp</a></p>
+      <p>© <span id="year">2026</span> PIVÔ</p>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
